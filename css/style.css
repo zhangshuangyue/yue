@@ -1,5 +1,5 @@
 @charset "utf-8";
-body,div,p,span,input,button,textarea,ul,li,table,tr,td{padding:0;margin:0;text-decoration:none;list-style:none;font-family:"微软雅黑";outline:none;font-size:14px;color:#333;}
+body,div,p,span,input,button,textarea,ul,li,table,tr,td{padding:0;margin:0;text-decoration:none;list-style:none;font-family:"微软雅黑";outline:none;font-size:14px;color:#2B8387;}
 h1,h2,h3,h4,h5,h6{padding:0;margin:0;font-family:"微软雅黑";}
 img{border:0;}
 body{margin:0; padding:0; font-family:"微软雅黑"; font-size:14px; background:#fff;width:100%;min-width: 1200px;}
@@ -10,27 +10,30 @@ body {
     background: #e0e0e0;
     font-family: 'Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Hiragino Sans GB','微软雅黑','WenQuanYi Micro Hei',STHeiti,SimSun,sans-serif;
     min-width: 1080px;
+    
 }
 .body_container{
     float: left;
     width: 100%;
-    margin: 25px 10px 10px 10px;
+    margin: 10px;
     overflow: hidden;
     border-radius: 4px;
+    padding: 20px;
 }
 .left_container,.right_container{
 	margin-bottom: -3000px;
 	padding-bottom: 3000px;
 }
+/*左边栏*/
 .left_container{
 	width: 30%;	
     float: left;
     background-color: #5DC3B1;
 }
 .left_top{
-        margin: 0 auto;
+    margin: 0 auto;
     text-align: center;
-    padding: 50px;
+    padding: 35px;
 }
 .touxiang_pic{
 	    width: 200px;
@@ -43,17 +46,141 @@ body {
     height: 100%;
     border-radius: 50%;
 }
-.right_container{
-	width: 70%;
-    float: left;
-    background-color: #F1EEE8;
-}
 .mine_name{
-	padding: 15px;
+    padding: 15px;
     font-size: 30px;
     font-weight: 600;
     color: #F1EDE7;
 }
-li{
-	
+.describe_msg{
+    border-top: 2px solid #28887c;
+    border-bottom: 1.6px solid #359889;
+    padding: 11px 2px;
 }
+.describe{
+    line-height: 23px;
+    color: #2B8387;
+    font-size: 15px;
+    font-weight: 500;
+}
+.job_name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #28887c;
+    padding-top: 5px;
+}
+/*技能树*/
+.left_middle ul{
+       padding: 0 50px;
+}
+.left_middle li{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.skill_name{
+    font-size: 18px;
+    font-weight: 600;
+    color: #F1EDE7;
+    float: left;
+    width: 90px;
+    text-align: right;
+    padding-right: 15px;
+    height: 20px;
+    line-height: 20px;
+}
+.skill_slide_bar{
+    width: 150px;
+    background-color: #3EB79F;
+    float: left;
+    height: 20px;
+    border-radius: 20px;
+}
+.skill_slide_bar_sec{
+    width: 70%;
+    background-color: #F1EDE7;
+    height: 20px;
+    border-radius: 20px 0px 0px 20px;
+}
+.mine_introduction,.left_bottom{
+    padding:0 50px;
+}
+.mine_introduction{
+    line-height: 25px;
+    font-size: 15px;
+    padding-top: 35px;
+    padding-bottom: 360px;
+}
+/*关于我*/
+.about_me li{
+    padding: 5px;
+}
+.about_me i{
+    color: #FFFFFF; 
+    padding-right: 10px;
+}
+/*右边栏*/
+.right_container{
+	width: 70%;
+    float: left;
+    background-color: #F1EEE8;
+    padding-top : 20px;
+}
+.online_resume{
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 10px;  
+}
+.introduction_msg{
+    padding-left: 25px;
+}
+.project_experience,
+.practice_experience,.education_experience,
+.more_experience{
+    font-size: 30px;
+    font-weight: 600;
+    color: #28887c;
+}
+/*项目经历*/
+.project_experience{
+    padding-top: 30px;
+}
+.project_experience_title,
+.practice_experience_title,
+.education_experience_title{
+    color: #5CC3B1;
+    font-size: 23px;
+    font-weight: 600;
+    padding:10px 0; 
+}
+.project_experience_msg,
+.practice_experience_detail,
+.more_experience_container,
+.date{
+    line-height: 23px;
+    font-size: 15px;
+}
+.date{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px;
+}
+.project_experience_container,
+.education_experience_container,
+.practice_experience_container,
+.more_experience_container{
+    padding-top: 10px;
+    padding-right: 20px;
+}
+/*实习经历*/
+.practice_experience{
+    padding-top: 30px;
+}
+/*教育背景*/
+.education_experience{
+    padding-top: 30px;
+}
+/*更多*/
+.more_experience{
+    padding-top: 30px;
+};
